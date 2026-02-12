@@ -17,7 +17,6 @@ class Officer extends Employee {
 
 class Manager extends Employee {
     String department;
-   
 }
 
 // TODO: Create class Officer extends Employee
@@ -46,11 +45,10 @@ public class EmployeeInheritance {
         // Print "Manager:"
         // Print manager details (one per line)
 
-	public static void main(String[] args) {
+	 public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-
-	 Officer o = new Officer();
+        Officer o = new Officer();
         o.name = sc.nextLine();
         o.age = Integer.parseInt(sc.nextLine());
         o.phoneNumber = sc.nextLine();
@@ -66,7 +64,8 @@ public class EmployeeInheritance {
         m.salary = Double.parseDouble(sc.nextLine());
         m.department = sc.nextLine();
 
-        System.out.println("Officer Details:");
+        // Correct Output Format
+        System.out.println("Officer:");
         System.out.println(o.name);
         System.out.println(o.age);
         System.out.println(o.phoneNumber);
@@ -74,7 +73,7 @@ public class EmployeeInheritance {
         o.printSalary();
         System.out.println(o.specialization);
 
-        System.out.println("Manager Details:");
+        System.out.println("Manager:");
         System.out.println(m.name);
         System.out.println(m.age);
         System.out.println(m.phoneNumber);
@@ -83,7 +82,5 @@ public class EmployeeInheritance {
         System.out.println(m.department);
 
         sc.close();
-	
-	}
-    
+    }
 }
